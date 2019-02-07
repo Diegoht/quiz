@@ -13,7 +13,7 @@
          <ion-card>
           
            <h1 *ngIf="c.hasOwnProperty('price')"> {{c.price.formattedAmount}} </h1>
-           <h2 *ngIf="c.hasOwnProperty('geo')"> {{c.geo.displayName}} </h2>
+           <h2 *ngIf="c.hasOwnProperty('geo')"> {{c.geo.displayName}}, {{c.geo.name}} </h2>
            <img *ngIf="c.hasOwnProperty('pictures')" src= "{{c.pictures[0].url}}"> 
          </ion-card>
       </ion-col>
